@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/Style2.css">
+    <title>Blackjack</title>
+    <h1>Let's Play Some Blackjack!!</h1>
+</head>
+<body>
+    <!-- Creates the start up buttons  -->
+    <button id = 'startButton'>Start Game!</button>
+    <button id = 'options'>Options</button>
+    <button id = "hitButton" class="hide">Hit!</button>
+    <button id = "stayButton" class="hide">Stay!</button>
+    <!--Creates the options box and places the dropdown options in it-->
+    <div id= 'optBox' class="box hide">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Deck Settings</button>
+            <div id="myDropdown" class="dropdown-content">
+            </div>
+        </div>
+    </div>
+    <!--Creates a space for the player's hand and thier score-->
+    <div id = 'playerContainer' class="playerSpace hide">
+        <label class="hand">Player's Hand</label>
+        <div id ='playersCards'></div>
+        <div id ='playerScore'></div>
+    </div>
+    <!--Creates a space for the dealer's hand and thier score-->
+    <div id = 'dealerContainer' class="dealerSpace hide">
+        <label class="hand">Dealer's Hand</label>
+        <div id ='dealersCards'></div>
+        <div id ='dealerScore'></div>
+    </div>
+    <!--Imports Javascript code-->
+    <script src= "../Javascript/app.js"></script>
+</body>
+</html>
